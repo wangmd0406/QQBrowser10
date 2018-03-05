@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html lang="en" class="lock">
+<head>
+    <script type="text/javascript">
+        var _speedMark = new Date();
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="charset" content="utf-8">
+    <meta http-equiv="content-language" content="utf-8">
+    <meta http-equiv="MSThemeCompatible" content="Yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="expires" content="Thursday 7 November 2019 01:00 GMT" />
+    <link rel="shortcut icon" href="./static/favicon.ico"/>
+    <title>QQ浏览器10官方网站 - 浏览器_浏览器下载_微信电脑版</title>
+    <meta name="keywords" content="浏览器,浏览器下载,QQ浏览器,微信网页版">
+    <meta name="description" content="QQ浏览器官网提供最新浏览器下载，新一代QQ浏览器采用全新架构，并针对IE内核全面优化5，全新的微信电脑版，让您边上网边聊天，更有强大的安全保障为您的4账号保驾护航，为用户带来更轻、更快、更安全的浏览体验。">
+    <link rel="stylesheet" href="./index.css">
+    <script>
+        (function(w){"use strict";w.matchMedia=w.matchMedia||function(doc,undefined){var bool,docElem=doc.documentElement,refNode=docElem.firstElementChild||docElem.firstChild,fakeBody=doc.createElement("body"),div=doc.createElement("div");div.id="mq-test-1";div.style.cssText="position:absolute;top:-100em";fakeBody.style.background="none";fakeBody.appendChild(div);return function(q){div.innerHTML='­<style media="'+q+'"> #mq-test-1 { width: 42px; }</style>';docElem.insertBefore(fakeBody,refNode);bool=div.offsetWidth===42;docElem.removeChild(fakeBody);return{matches:bool,media:q}}}(w.document)})(this);(function(w){"use strict";var respond={};w.respond=respond;respond.update=function(){};var requestQueue=[],xmlHttp=function(){var xmlhttpmethod=false;try{xmlhttpmethod=new w.XMLHttpRequest()}catch(e){xmlhttpmethod=new w.ActiveXObject("Microsoft.XMLHTTP")}return function(){return xmlhttpmethod}}(),ajax=function(url,callback){var req=xmlHttp();if(!req){return}req.open("GET",url,true);req.onreadystatechange=function(){if(req.readyState!==4||req.status!==200&&req.status!==304){return}callback(req.responseText)};if(req.readyState===4){return}req.send(null)};respond.ajax=ajax;respond.queue=requestQueue;respond.regex={media:/@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi,keyframes:/@(?:\-(?:o|moz|webkit)\-)?keyframes[^\{]+\{(?:[^\{\}]*\{[^\}\{]*\})+[^\}]*\}/gi,urls:/(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,findStyles:/@media *([^\{]+)\{([\S\s]+?)$/,only:/(only\s+)?([a-zA-Z]+)\s?/,minw:/\([\s]*min\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/,maxw:/\([\s]*max\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/};respond.mediaQueriesSupported=w.matchMedia&&w.matchMedia("only all")!==null&&w.matchMedia("only all").matches;if(respond.mediaQueriesSupported){return}var doc=w.document,docElem=doc.documentElement,mediastyles=[],rules=[],appendedEls=[],parsedSheets={},resizeThrottle=30,head=doc.getElementsByTagName("head")[0]||docElem,base=doc.getElementsByTagName("base")[0],links=head.getElementsByTagName("link"),lastCall,resizeDefer,eminpx,getEmValue=function(){var ret,div=doc.createElement("div"),body=doc.body,originalHTMLFontSize=docElem.style.fontSize,originalBodyFontSize=body&&body.style.fontSize,fakeUsed=false;div.style.cssText="position:absolute;font-size:1em;width:1em";if(!body){body=fakeUsed=doc.createElement("body");body.style.background="none"}docElem.style.fontSize="100%";body.style.fontSize="100%";body.appendChild(div);if(fakeUsed){docElem.insertBefore(body,docElem.firstChild)}ret=div.offsetWidth;if(fakeUsed){docElem.removeChild(body)}else{body.removeChild(div)}docElem.style.fontSize=originalHTMLFontSize;if(originalBodyFontSize){body.style.fontSize=originalBodyFontSize}ret=eminpx=parseFloat(ret);return ret},applyMedia=function(fromResize){var name="clientWidth",docElemProp=docElem[name],currWidth=doc.compatMode==="CSS1Compat"&&docElemProp||doc.body[name]||docElemProp,styleBlocks={},lastLink=links[links.length-1],now=new Date().getTime();if(fromResize&&lastCall&&now-lastCall<resizeThrottle){w.clearTimeout(resizeDefer);resizeDefer=w.setTimeout(applyMedia,resizeThrottle);return}else{lastCall=now}for(var i in mediastyles){if(mediastyles.hasOwnProperty(i)){var thisstyle=mediastyles[i],min=thisstyle.minw,max=thisstyle.maxw,minnull=min===null,maxnull=max===null,em="em";if(!!min){min=parseFloat(min)*(min.indexOf(em)>-1?eminpx||getEmValue():1)}if(!!max){max=parseFloat(max)*(max.indexOf(em)>-1?eminpx||getEmValue():1)}if(!thisstyle.hasquery||(!minnull||!maxnull)&&(minnull||currWidth>=min)&&(maxnull||currWidth<=max)){if(!styleBlocks[thisstyle.media]){styleBlocks[thisstyle.media]=[]}styleBlocks[thisstyle.media].push(rules[thisstyle.rules])}}}for(var j in appendedEls){if(appendedEls.hasOwnProperty(j)){if(appendedEls[j]&&appendedEls[j].parentNode===head){head.removeChild(appendedEls[j])}}}appendedEls.length=0;for(var k in styleBlocks){if(styleBlocks.hasOwnProperty(k)){var ss=doc.createElement("style"),css=styleBlocks[k].join("\n");ss.type="text/css";ss.media=k;head.insertBefore(ss,lastLink.nextSibling);if(ss.styleSheet){ss.styleSheet.cssText=css}else{ss.appendChild(doc.createTextNode(css))}appendedEls.push(ss)}}},translate=function(styles,href,media){var qs=styles.replace(respond.regex.keyframes,"").match(respond.regex.media),ql=qs&&qs.length||0;href=href.substring(0,href.lastIndexOf("/"));var repUrls=function(css){return css.replace(respond.regex.urls,"$1"+href+"$2$3")},useMedia=!ql&&media;if(href.length){href+="/"}if(useMedia){ql=1}for(var i=0;i<ql;i++){var fullq,thisq,eachq,eql;if(useMedia){fullq=media;rules.push(repUrls(styles))}else{fullq=qs[i].match(respond.regex.findStyles)&&RegExp.$1;rules.push(RegExp.$2&&repUrls(RegExp.$2))}eachq=fullq.split(",");eql=eachq.length;for(var j=0;j<eql;j++){thisq=eachq[j];mediastyles.push({media:thisq.split("(")[0].match(respond.regex.only)&&RegExp.$2||"all",rules:rules.length-1,hasquery:thisq.indexOf("(")>-1,minw:thisq.match(respond.regex.minw)&&parseFloat(RegExp.$1)+(RegExp.$2||""),maxw:thisq.match(respond.regex.maxw)&&parseFloat(RegExp.$1)+(RegExp.$2||"")})}}applyMedia()},makeRequests=function(){if(requestQueue.length){var thisRequest=requestQueue.shift();ajax(thisRequest.href,function(styles){translate(styles,thisRequest.href,thisRequest.media);parsedSheets[thisRequest.href]=true;w.setTimeout(function(){makeRequests()},0)})}},ripCSS=function(){for(var i=0;i<links.length;i++){var sheet=links[i],href=sheet.href,media=sheet.media,isCSS=sheet.rel&&sheet.rel.toLowerCase()==="stylesheet";if(!!href&&isCSS&&!parsedSheets[href]){if(sheet.styleSheet&&sheet.styleSheet.rawCssText){translate(sheet.styleSheet.rawCssText,href,media);parsedSheets[href]=true}else{if(!/^([a-zA-Z:]*\/\/)/.test(href)&&!base||href.replace(RegExp.$1,"").split("/")[0]===w.location.host){if(href.substring(0,2)==="//"){href=w.location.protocol+href}requestQueue.push({href:href,media:media})}}}}makeRequests()};ripCSS();respond.update=ripCSS;respond.getEmValue=getEmValue;function callMedia(){applyMedia(true)}if(w.addEventListener){w.addEventListener("resize",callMedia,false)}else if(w.attachEvent){w.attachEvent("onresize",callMedia)}})(this);
+        window.scrollTo(0, 0);
+    </script>
+</head>
+<body class="lock">
+    <script>
+        // 顶部banner逻辑
+        (function () {
+            var getQueryString = function (name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+                var r = window.location.search.substr(1).match(reg); 
+                if (r != null) return unescape(r[2]);return null; 
+            };
+            if (getQueryString('adtag') === 'campaignwb') {
+                document.body.className = 'lock top-banner';
+            };
+        }());
+    </script>
+    <a class="header-banner" href="http://tq.qq.com/events/qb10_wb/index.html?ADTAG=gw" target="_blank">
+    <img src="./static/top-banner.png" class="banner-img">
+</a>
+<div class="header">
+    <div class="header-inner">
+        <img src="./static/title.png" class="logo-l">
+        <div class="logo-r">
+            <ul class="header-nav global-clearfix">
+                <li class="nav-li"><a class="nav-link" target="_blank" href="http://i.browser.qq.com/?tab=gifts&ADTAG=QB10gw">特权</a></li>
+                <li class="nav-li"><a class="nav-link" target="_blank" href="http://bbs.browser.qq.com">论坛</a></li>
+                <li class="nav-li"><a class="nav-link" target="_blank" href="http://browser.qq.com/faq/#/index">帮助</a></li>
+                <li class="nav-li"><a class="nav-link" target="_blank" href="http://browser.qq.com/events/feedback/feedback.html">反馈建议</a></li>
+                <li class="nav-li"><a class="nav-link" href="https://dldir1.qq.com/invc/tt/QQBrowser_Setup_9.7.12672.400.exe">9.7版本下载</a></li>
+                <li class="nav-li btn"><div class="qb-btn"><a class="downloadLink" style="color: #fff;" href="https://dldir1.qq.com/invc/tt/QQBrowser_Setup_10.0Beta.exe">立即下载</a></div></li>
+            </ul>
+        </div>
+    </div> 
+</div>
+    <div class="first-screen">
+    <div class="download-bar">
+        <img src="./static/logo1.png" srcset="./static/logo1@2x.png 2x" class="bar-logo">
+        <div class="bar-r">
+            <a style="color: #fff;" class="downloadLink" href="https://dldir1.qq.com/invc/tt/QQBrowser_Setup_10.0Beta.exe"><div class="qb-btn">下载 10.0 Beta 版</div></a>
+        </div>
+    </div>
+    <!--[if lt IE 9]>
+        <img class="pre-image" src="./static/index-banner1.png" alt="">
+    <![endif]-->
+    <div class="video-wrapper">
+        <div class="video-wrapper-inner">
+            <video preload="preload" class="step-video step-video1" autoplay>
+                <source src="./static/one-step1.mp4?v=5" type="video/mp4">
+            </video>
+            <video preload="preload" class="step-video step-video2">
+                <source src="./static/one-step2.mp4?v=5" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+<div class="video-img-wrapper">
+    <img class="video-img" srcset="./static/sider-bg1@2x.png 2x" src="./static/sider-bg1.png" alt="">
+</div>
+<div class="one-screen hide">
+    <div class="download-bar">
+        <img src="./static/logo1.png" srcset="./static/logo1@2x.png 2x" class="bar-logo">
+        <div class="bar-r">
+            <a style="color: #fff;" class="downloadLink" href="https://dldir1.qq.com/invc/tt/QQBrowser_Setup_10.0Beta.exe"><div class="qb-btn">下载 10.0 Beta 版</div></a>
+        </div>
+    </div>
+    <div class="pre-wrapper">
+        <img class="pre-image" src="./static/index-banner1.png" alt="">
+    </div>
+</div>
+    <div class="sider-bar sider bg1">
+    <div class="sider-bar-inner global-clearfix">
+        <div class="sider-left">
+            <div class="sider-left-content">
+                <h1 class="sider-left-title">有侧栏，就够了</h1>
+                <p class="sider-left-info">为屏幕开辟新的空间，浏览体验灵活多变。丰富内容服务，让你随着兴趣，探索多彩世界。</p>
+                <div class="sider-switch global-clearfix">
+                    <div class="sider-switch-item">
+                        <div class="sider-switch-logo icon-1 active"></div>
+                        <p class="sider-switch-title">资讯</p>
+                        <p class="sider-switch-info">电脑轻松刷新闻</p>
+                    </div>
+                    <div class="sider-switch-item">
+                        <div class="sider-switch-logo icon-2"></div>
+                        <p class="sider-switch-title">追剧</p>
+                        <p class="sider-switch-info">贴心追剧小助手</p>
+                    </div>
+                    <div class="sider-switch-item">
+                        <div class="sider-switch-logo icon-3"></div>
+                        <p class="sider-switch-title">直播</p>
+                        <p class="sider-switch-info">全网热门主播</p>
+                    </div>
+                    <div class="sider-switch-progress-w">
+                        <div class="sider-switch-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sider-right">
+            <img class="sider-right-img active" srcset="./static/sider-bg1@2x.png 2x" src="./static/sider-bg1.png" alt="">
+            <img class="sider-right-img absolute" srcset="./static/sider-bg2@2x.png 2x" src="./static/sider-bg2.png" alt="">
+            <img class="sider-right-img absolute" srcset="./static/sider-bg3@2x.png 2x" src="./static/sider-bg3.png" alt="">
+        </div>
+    </div>
+</div>
+    <div class="skin hide">
+    <div class="skin-inner">
+        <div class="skin-header">
+            <h1 class="title">百款精美皮肤  发现属于你的浏览器</h1>
+            <p class="info">全新上百款全屏壁纸，搭配毛玻璃界面，给你耳目一新的惊喜。最新配色样式，对比更强，文字更清晰。</p>
+        </div>
+        <!--[if lt IE 9]>
+            <img class="skin-pre-img" src="./static/skin.png" alt="">
+        <![endif]-->
+        <div class="skin-w">
+            <div class="skin-w-inner">
+                <video class="skin-video" loop preload>
+                    <source src="./static/five.mp4?v=2" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="speed hide">
+    <div class="speed-wrapper">
+        <div class="video-w">
+            <video class="speed-video video1" preload>
+                <source src="./static/page-four-2.mp4?v=5" type="video/mp4">
+            </video>
+            <video class="speed-video video2" preload loop>
+                <source src="./static/page-four-2.mp4?v=5" type="video/mp4">
+            </video>
+            <!--[if lt IE 9]>
+                <img class="speed-pre-img" src="./static/page-four-banner-clean.png">
+            <![endif]-->
+            <div class="video-bg">
+                <div class="video-info">
+                    <img class="info-title" src="./static/page-four-chrom.png" srcset="./static/page-four-chrom@2x.png 2x">
+                    <div class="info-intro">至强性能，快到超出你的想象</div>
+                    <div class="info-feature global-clearfix">
+                        <div class="feature-item">
+                            <img class="feature-icon" src="./static/four-icon-chrom.png" srcset="./static/four-icon-chrom@2x.png 2x">
+                            <p class="feature-text">内核性能最强</p>
+                        </div>
+                        <div class="feature-item">
+                            <img class="feature-icon" src="./static/four-icon-quick.png" srcset="./static/four-icon-quick@2x.png 2x">
+                            <p class="feature-text">网页打开最快</p>
+                        </div>
+                        <div class="feature-item">
+                            <img class="feature-icon" src="./static/four-icon-time.png" srcset="./static/four-icon-time@2x.png 2x">
+                            <p class="feature-text">启动速度最快</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="sider-bar collection hide">
+    <div class="sider-bar-inner global-clearfix">
+        <div class="sider-left">
+            <div class="sider-left-content">
+                <h1 class="sider-left-title">收藏，内容笔记</h1>
+                <p class="sider-left-info">链接、网页正文、图片、文字，轻松收藏归类。个人专属笔记，收藏你的浏览见闻。</p>
+                <div class="sider-switch global-clearfix">
+                    <div class="sider-switch-item">
+                        <div class="sider-switch-logo icon-1 active"></div>
+                        <p class="sider-switch-title">网页收藏</p>
+                        <p class="sider-switch-info">识别网页正文</p>
+                    </div>
+                    <div class="sider-switch-item">
+                        <div class="sider-switch-logo icon-2"></div>
+                        <p class="sider-switch-title">图片收藏</p>
+                        <p class="sider-switch-info">快速收藏图片</p>
+                    </div>
+                    <div class="sider-switch-item">
+                        <div class="sider-switch-logo icon-3"></div>
+                        <p class="sider-switch-title">文字收藏</p>
+                        <p class="sider-switch-info">收藏文字笔记</p>
+                    </div>
+                    <div class="sider-switch-progress-w">
+                        <div class="sider-switch-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sider-right">
+            <img class="sider-right-img" srcset="./static/collection-link-1@2x.png 2x" src="./static/collection-link-1.png" alt="">
+            <img class="sider-right-img absolute" srcset="./static/collection-link-2@2x.png 2x" src="./static/collection-link-2.png" alt="">
+            <img class="sider-right-img absolute" srcset="./static/collection-img-1@2x.png 2x" src="./static/collection-img-1.png" alt="">
+            <img class="sider-right-img absolute" srcset="./static/collection-img-2@2x.png 2x" src="./static/collection-img-2.png" alt="">
+            <img class="sider-right-img absolute" srcset="./static/collection-text-1@2x.png 2x" src="./static/collection-text-1.png" alt="">
+            <img class="sider-right-img absolute" srcset="./static/collection-text-2@2x.png 2x" src="./static/collection-text-2.png" alt="">
+        </div>
+    </div>
+</div>
+    
+<div class="extension hide">
+    <div class="extension-header">
+        <h1 class="title">十万款应用插件 全网最全</h1>
+        <p class="info">完美兼容数万款Chromium扩展应用，更内置有强大实用工具。优选最受喜爱的精良应用，淘应用，也是淘精品。</p>
+    </div>
+    <div class="extension-slider-inner-wrapper">
+        <div class="extension-slider-wrapper">
+            <div class="extension-slider-inner global-clearfix">
+                <div class="extension-silider-item">
+                    <img class="extension-slider-img" src="./static/slide-bg5.png" srcset="./static/slide-bg5@2x.png 2x">
+                    <div class="extension-slider-info global-clearfix">
+                        <div class="slider-info-left">
+                            <img class="info-left-img" src="./static/slide-icon5.png" srcset="./static/slide-icon5@2x.png 2x">
+                            <p class="info-left-title">翻译君</p>
+                        </div>
+                        <div class="slider-info-right">
+                            <p class="info-right-detail">最好用的网页翻译助手，支持划词翻译、手动输入翻译，支持网页整体翻译、鼠标悬停显示原文等操作。牛津词典官方授权，准确率高，速度快。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="extension-silider-item">
+                        <img class="extension-slider-img" src="./static/slide-bg1.png" srcset="./static/slide-bg1@2x.png 2x">
+                        <div class="extension-slider-info global-clearfix">
+                            <div class="slider-info-left">
+                                <img class="info-left-img" src="./static/slide-icon1.png" srcset="./static/slide-icon1@2x.png 2x">
+                                <p class="info-left-title">微信</p>
+                            </div>
+                            <div class="slider-info-right">
+                                <p class="info-right-detail">腾讯官方授权微信浏览器版，可在电脑上使用微信的相关功能，打字速度更快，支持拖拽传图、快速发送文件，享受“边上网边聊天”的畅快之旅。</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="extension-silider-item">
+                        <img class="extension-slider-img" src="./static/slide-bg2.png" srcset="./static/slide-bg2@2x.png 2x">
+                        <div class="extension-slider-info global-clearfix">
+                            <div class="slider-info-left">
+                                <img class="info-left-img" src="./static/slide-icon2.png" srcset="./static/slide-icon2@2x.png 2x">
+                                <p class="info-left-title">广告过滤</p>
+                            </div>
+                            <div class="slider-info-right">
+                                <p class="info-right-detail">Adblock Plus 是世界上最流行的广告拦截软件。所有广告被自动阻挡，包括图片广告、文字链链接、浮窗广告，尽情享受洁净的网络世界。</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="extension-silider-item">
+                        <img class="extension-slider-img" src="./static/slide-bg3.png" srcset="./static/slide-bg3@2x.png 2x">
+                        <div class="extension-slider-info global-clearfix">
+                            <div class="slider-info-left">
+                                <img class="info-left-img" src="./static/slide-icon3.png" srcset="./static/slide-icon3@2x.png 2x">
+                                <p class="info-left-title">截图工具</p>
+                            </div>
+                            <div class="slider-info-right">
+                                <p class="info-right-detail">全新升级的截图工具，支持网页内容截图、隐藏窗口截图、网页整体保存为图片等，内置画笔、箭头、马赛克等快捷编辑功能，快捷方便。</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="extension-silider-item">
+                        <img class="extension-slider-img" src="./static/slide-bg4.png" srcset="./static/slide-bg4@2x.png 2x">
+                        <div class="extension-slider-info global-clearfix">
+                            <div class="slider-info-left">
+                                <img class="info-left-img" src="./static/slide-icon4.png" srcset="./static/slide-icon4@2x.png 2x">
+                                <p class="info-left-title">夜间模式</p>
+                            </div>
+                            <div class="slider-info-right">
+                                <p class="info-right-detail">浏览器更懂夜的黑。内置夜间模式，可任意调整浏览区域的亮度和色温，把网页背景变成适合夜晚阅读的模式，同时可自由设定生效时间。</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="extension-silider-item">
+                        <img class="extension-slider-img" src="./static/slide-bg5.png" srcset="./static/slide-bg5@2x.png 2x">
+                        <div class="extension-slider-info global-clearfix">
+                            <div class="slider-info-left">
+                                <img class="info-left-img" src="./static/slide-icon5.png" srcset="./static/slide-icon5@2x.png 2x">
+                                <p class="info-left-title">翻译君</p>
+                            </div>
+                            <div class="slider-info-right">
+                                <p class="info-right-detail">最好用的网页翻译助手，支持划词翻译、手动输入翻译，支持网页整体翻译、鼠标悬停显示原文等操作。牛津词典官方授权，准确率高，速度快。</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="extension-silider-item">
+                    <img class="extension-slider-img" src="./static/slide-bg1.png" srcset="./static/slide-bg1@2x.png 2x">
+                    <div class="extension-slider-info global-clearfix">
+                        <div class="slider-info-left">
+                            <img class="info-left-img" src="./static/slide-icon1.png" srcset="./static/slide-icon1@2x.png 2x">
+                            <p class="info-left-title">微信</p>
+                        </div>
+                        <div class="slider-info-right">
+                            <p class="info-right-detail">腾讯官方授权微信浏览器版，可在电脑上使用微信的相关功能，打字速度更快，支持拖拽传图、快速发送文件，享受“边上网边聊天”的畅快之旅。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extension-silider-item">
+                    <img class="extension-slider-img" src="./static/slide-bg2.png" srcset="./static/slide-bg2@2x.png 2x">
+                    <div class="extension-slider-info global-clearfix">
+                        <div class="slider-info-left">
+                            <img class="info-left-img" src="./static/slide-icon2.png" srcset="./static/slide-icon2@2x.png 2x">
+                            <p class="info-left-title">广告过滤</p>
+                        </div>
+                        <div class="slider-info-right">
+                            <p class="info-right-detail">Adblock Plus 是世界上最流行的广告拦截软件。所有广告被自动阻挡，包括图片广告、文字链链接、浮窗广告，尽情享受洁净的网络世界。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-doodle global-clearfix">
+            
+                
+                    <div class="doodle active">
+                        <div class="progress"></div>
+                    </div>
+                
+            
+                
+                    <div class="doodle">
+                        <div class="progress"></div>
+                    </div>
+                
+            
+                
+                    <div class="doodle">
+                        <div class="progress"></div>
+                    </div>
+                
+            
+                
+                    <div class="doodle">
+                        <div class="progress"></div>
+                    </div>
+                
+            
+                
+                    <div class="doodle">
+                        <div class="progress"></div>
+                    </div>
+                
+            
+        </div>
+    </div>
+</div>
+    <div class="life hide">
+    <div class="life-inner">
+        <div class="life-header">
+            <h1 class="title title1">正是它</h1>
+            <h1 class="title title2">让生活如此与众不同</h1>
+        </div>
+        <div class="bg-wrapper">
+            <div class="bg-w">
+                <img class="bg active" src="./static/page-seven1.png" srcset="./static/page-seven1@2x.png 2x" alt="">
+                <img class="bg" src="./static/page-seven2.png"  srcset="./static/page-seven2@2x.png 2x" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="footer hide">
+    <div class="link-bar">
+        <ul class="link-bar-ul global-clearfix">
+            <li class="link-bar-li">
+                <a class="link-bar-a" target="_blank" href="http://bbs.browser.qq.com/">官方论坛</a>
+            </li>
+            <li class="link-bar-li">
+                <a class="link-bar-a" target="_blank" href="http://tq.qq.com/qbrcenter/index.html?adtag=qbweb">特权中心</a>
+            </li>
+            <li class="link-bar-li">
+                <a class="link-bar-a" target="_blank" href="http://bbs.browser.qq.com/forum-225-1.html">升级日志</a>
+            </li>
+            <li class="link-bar-li">
+                <a class="link-bar-a" target="_blank" href="https://safebrowsing.qq.com/safebrowsing/index.html">安全统计</a>
+            </li>
+            <li class="link-bar-li">
+                <a class="link-bar-a" target="_blank" href="http://browser.qq.com/mac/">QQ浏览器 for Mac</a>
+            </li>
+            <li class="link-bar-li">
+                <a class="link-bar-a" target="_blank" href="http://browser.qq.com/ipad/index.html?ADTAG=pc-qqbrowser-website">QQ浏览器 for iPad</a>
+            </li>
+            <li class="link-bar-li">
+                <a class="link-bar-a" target="_blank" href="http://browser.qq.com/wiki/index.html#!index.md">wiki</a>
+            </li>
+        </ul>
+    </div>
+    <p class="copyright">© 2018 Tencent</p>
+</div>
+    <script>window.scrollTo(0, 0);</script>
+    <script src="./index.js"></script>
+</body>
+</html>
